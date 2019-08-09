@@ -1,0 +1,4 @@
+git remote add origin https://github.com/SSBladedge/College-Projects-.git
+
+  git config --global user.email "gbemidale.a@gmail.com"
+  git config --global user.name "SSBladedge"
