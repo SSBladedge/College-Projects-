@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Musical Journey Logins
+    </title>
+    <script src="musical_journey.js">
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=PT+Sans&display=swap');
+        body {
+            background-color: rgb(172, 166, 166);
+            font-family: 'PT Sans', sans-serif;
+        }
+        
+        main {
+            background-color: white;
+            width: 75%;
+            margin: 100px auto;
+            height: 400px;
+        }
+        
+        #form,
+        #image {
+            height: 100%;
+            width: 50%;
+        }
+        
+        #form {
+            float: left;
+            position: relative
+        }
+        
+        section {
+            position: absolute;
+            top: 15px;
+            right: 75px;
+            bottom: 15px;
+            left: 75px
+        }
+        
+        #image {
+            color: white;
+            float: right;
+            background-image: url(guitar.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative
+        }
+        
+        #img_content {
+            position: absolute;
+            top: 118px;
+            left: 76px;
+        }
+        
+        input.textbox {
+            border-radius: 25px 25px 25px 25px;
+            width: 100%;
+            height: 30px;
+            background-color: lightgray;
+            padding-left: 20px
+        }
+        
+        input::placeholder {
+            margin-left: 10px
+        }
+        
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        
+        input.submit {
+            border-radius: 55px 55px 55px 55px;
+            background-color: black;
+            height: 35px;
+            width: 45%;
+            color: white;
+            margin-top: 12px
+        }
+        
+        footer {
+            position: absolute;
+            bottom: 0px
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div id="form">
+            <section>
+                <h1>Login</h1>
+                <p>Welcome to the world famous music site.<br>Login here and create your own music.</p>
+                <form>
+                    <input class="textbox" type="text" name="email" placeholder="Type your email">
+                    <br>
+                    <input class="textbox" type="password" name="password" placeholder="Type your password" style="margin-top: 8px; margin-bottom: 8px">
+                    <br>
+                    <input type="checkbox" value="Remember me" id="remember_me">
+                    <label for="remember_me" style="font-size: small">Remember me</label>
+                    <a href="retrieve_password.html" style="float:right; font-size: small">forgot your password?</a>
+                    <br>
+                    <input class="submit" type="submit" value="Login Now" onclick="a()">
+                    <input class="submit" type="submit" value="Register" style="float:right" onclick="a()">
+                </form>
+                <footer>
+                    <strong style="font-size: small">You can also login with</strong>
+                    <br>
+                    <img src="twitter_logo.jpg" height="40px" width="50px"><img src="facebook_logo.jpg" height="30px" width="30px" style="position:relative; left:20px">
+                </footer>
+            </section>
+        </div>
+        <div id="image">
+            <header id="img_content">
+                <h1>Start your musical journey</h1>
+                <p>Start create your amazing music with us!<br>Login into your account now.</p>
+            </header>
+        </div>
+    </main>
+</body>
+
+</html>
