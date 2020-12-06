@@ -1,2 +1,2 @@
-# College-Projects-
-These are a collection of coding projects during and around my college years 
+# Musical Journey 
+This is a a replica for another site's login page 
